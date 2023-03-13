@@ -41,7 +41,7 @@ The generated HTML and CSS code will be displayed on the page.
 
 ## Demo
 
-#### You can see a live demo of the generator [here](https://responsive-img-generator.netlify.app).
+### You can see a live demo of the generator [here](https://responsive-img-generator.netlify.app).
 
 
 
