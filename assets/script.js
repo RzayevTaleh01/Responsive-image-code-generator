@@ -1,11 +1,11 @@
-var htmlEditor = CodeMirror(document.getElementById("code-container-html"), {
+const htmlEditor = CodeMirror(document.getElementById("code-container-html"), {
   mode: "htmlmixed",
   lineNumbers: true,
   mode: "css",
   theme: "dracula",
   fullscreen: true,
 });
-var cssEditor = CodeMirror(document.getElementById("code-container-css"), {
+const cssEditor = CodeMirror(document.getElementById("code-container-css"), {
   mode: "css",
   lineNumbers: true,
   mode: "css",
@@ -13,8 +13,13 @@ var cssEditor = CodeMirror(document.getElementById("code-container-css"), {
   fullscreen: true,
 });
 
+const form = document.querySelector(".generator-form");
 
-function generateImage() {
+form.addEventListener("submit", generateImage);
+
+
+function generateImage(e) {
+  e.preventDefault();
   const imageUrl = document.getElementById('image-url').value;
   const imageWidth = document.getElementById('image-width').value;
   const imageHeight = document.getElementById('image-height').value;

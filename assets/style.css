@@ -82,6 +82,16 @@ button[type="submit"] {
     width: 45%;
 }
 
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
 @media (max-width: 992px) {
     .code-response {
         flex-direction: column;

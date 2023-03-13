@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,46 +12,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/htmlmixed/htmlmixed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/css/css.min.js"></script>
 </head>
+
 <body>
     <header>
 
         <h2>
-            Responsive Image Code Generator 
+            Responsive Image Code Generator
         </h2>
 
-        <form onsubmit="event.preventDefault(); generateImage();">
+        <form class="generator-form">
             <label for="image-url">Image url:</label>
-            <input placeholder="https://placehold.it/400x400" type="text" id="image-url" />
-    
+            <input required value="https://responsive-img-generator.netlify.app/assets/images/default.jpg" placeholder="https://placehold.it/400x400" type="text" id="image-url" />
+
             <label for="image-width">Image width:</label>
-            <input placeholder="400" type="number" id="image-width" />
-    
+            <input required value="320" placeholder="400" type="number" id="image-width" />
+
             <label for="image-height">Image height:</label>
-            <input placeholder="400" type="number" id="image-height" />
-    
+            <input value="180" required placeholder="400" type="number" id="image-height" />
+
             <button type="submit">Generate Code</button>
         </form>
 
     </header>
 
-    <div class="img-response">
-        <div id="image-container"></div>
-
-    </div>
-
-    <div class="code-response">
-        <div class="code-html">
-            <h3>HTML Code:</h3>
-            <pre><code id="code-container-html"></code></pre>
+    <main>
+        <div class="img-response">
+            <div id="image-container"></div>
         </div>
-        <div class="code-css">
-            <h3>CSS Code:</h3>
-            <pre><code id="code-container-css"></code></pre>
+        <div class="code-response">
+            <div class="code-html">
+                <h3>HTML Code:</h3>
+                <pre><code id="code-container-html">
+                </code></pre>
+            </div>
+            <div class="code-css">
+                <h3>CSS Code:</h3>
+                <pre><code id="code-container-css">
+                </code></pre>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <h3>
+            &copy; 2023, Taleh Rzayev
+        </h3>
+    </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/theme/dracula.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/javascript/javascript.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/display/fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/addon/display/fullscreen.min.js"></script>
 
     <script src="./assets/script.js"></script>
 </body>
