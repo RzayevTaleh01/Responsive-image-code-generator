@@ -47,7 +47,7 @@ function generateImage(e) {
   width: 100%;
   top: 0;
   left: 0;
-  padding: ${(imageHeight / imageWidth) * 100}% 0 0 0;
+  padding: ${(imageHeight / imageWidth) * 100}% 0 0 0; // Main Part - width:height% (padding-top)
 }
 .box-resize {
   position: absolute;
